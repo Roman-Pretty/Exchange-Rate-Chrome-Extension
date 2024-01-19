@@ -1,0 +1,150 @@
+$primary-color: #f6fafb;
+$secondary-color: #95b9c9;
+$background-color: #aed2e1;
+$text-color: #212529;
+
+/**
+ * This code represents a selection of SCSS code.
+ * It performs a specific task or implements a certain feature.
+ * Please refer to the code comments for detailed explanations.
+ */
+
+head {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0rem 10rem 0rem 10rem;
+    gap: 1rem;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+#title {
+    background-color: $secondary-color;
+    margin: 0rem;
+    width: 100vw;
+    height: 10vh;
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color: $primary-color;
+        font-size: 1rem;
+    }
+}
+
+#img-wrapper {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.2s ease-in-out;
+        width: 100%;
+        height: 100%;
+    }
+    // Todo: make it so hovering on button also does this
+    .hover-image {
+        opacity: 0;
+    }
+    
+    .hover-image:hover {
+        opacity: 1;
+    }
+}
+
+button h1 {
+    font-style: italic;
+}
+
+// TODO <i class="fas fa-exchange-alt"></i>
+#dropdowns {
+    display: inherit;
+    flex-direction: column;
+    gap: 1rem;
+
+    section {
+        display: inherit;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0rem;
+        background-color: $primary-color;
+        border: #95b9c9 solid 0.1rem;  
+        border-radius: 0.5rem;
+
+
+        * {
+            background-color: $primary-color;
+            color: $text-color;
+            border: none;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    section:hover {
+        border: $text-color solid 0.1rem;
+    }    
+
+    #from input {
+        border-right: $secondary-color solid 0.1rem;
+        font-size: 0.8rem;
+        color: gray;
+    }
+
+    #to p {
+        border-right: $secondary-color solid 0.1rem;
+        width: 100%;
+        height: 100%;
+        margin: 0.45rem;
+        padding: 0.45rem;
+        font-size: 0.8rem;
+        color: gray;
+    }
+    
+}
+
+select {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    display: flex;
+    justify-content: left;
+    -webkit-appearance: menulist;
+}
+
+.vertical-divider {
+    width: 100vw;
+    height: 0.05rem;
+    background-color: $secondary-color;
+}
+
+footer {
+    background-color: $secondary-color;
+    width: 100vw;
+    margin: 0rem;
+    padding: 0.6rem 1rem 0.6rem 1rem;
+    display: flex;
+    justify-content: end;
+    gap: 1.4rem;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+        transition: 0.1s;
+    }
+
+    a:hover {
+        color: $primary-color;
+        transition: 0.1s;
+    }
+}

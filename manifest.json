@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Currency Converter",
+    "version": "1.0",
+    "description": "Converts currencies on webpages",
+    "action": {
+        "default_icon": "/image/logo.png",
+        "default_popup": "/html/index.html"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/image/logo.png",
+                "/html/index.html",
+                "/js/exchange.js",
+                "/css/style.css"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ]     
+}

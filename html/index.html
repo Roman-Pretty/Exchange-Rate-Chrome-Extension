@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../js/exchange.js" defer="true"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../fontawesome/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section id="title">
+        <h1>Currency Converter</h1>
+    </section>
+
+    <button id="convert">
+        
+        <div id="img-wrapper">
+            <img src="../image/logo.png" alt="logo">
+            <img src="../image/logo-selected.png" alt="logo" class="hover-image">
+            
+        </div>
+        
+        <h1>Convert!</h1>
+    </button>   
+
+    <div class="vertical-divider"></div>
+
+    
+        <section id="dropdowns">
+            <section id="from">
+                <input type="number" id="input" placeholder="Enter amount">
+                <select name="from" id="currency-from">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CAD">CAD</option>
+                    <option value="JPY">JPY</option>
+                </select>       
+            </section>
+        <section id="to">
+            <p id="output"> </p>
+            <select name="to" id="currency-to">
+                <option value="GBP">GBP</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="CAD">CAD</option>
+                <option value="JPY">JPY</option>
+            </select>
+        </section>
+    </section>
+    <div id="result"></div>
+    <footer>
+        <a href="#">
+            <i class="fas fa-cog"></i> 
+        </a>
+        <a href="#">
+            <i class="fas fa-info-circle"></i>
+        </a>    
+    </footer>
+</body>
+
+</html>
