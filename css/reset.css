@@ -36,7 +36,7 @@ a {
 }
 
 /* Remove default button styles */
-button {
+button, hr {
     border: none;
     background: none;
     padding: 0;
